@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<title>Frontend Mentor | Time tracking dashboard</title>
+<body>
+<!--<insert here the background-->
+<div class="w-2/4 relative h-80">
+    <div class="w-full bg-indigo-600 m-8 rounded-2xl text-white p-8 absolute z-20">
+        <div class="flex">
+            <div class="w-24 border-4 border-white rounded-full">
+                <img src="images/image-jeremy.png">
+            </div>
+            <div class="pl-4">
+                <div class="opacity-80">Report for</div>
+                <div class="text-3xl">Jeremy Robson</div>
+            </div>
+        </div>
+    </div>
+    <div class="absolute w-full top-40 flex justify-between bg-indigo-800 ml-8 mr-8 rounded-2xl text-white p-8 z-10">
+        <a href="#" class="text-2xl opacity-80 hover:opacity-100 mt-6">Daily</a>
+        <a href="#" class="text-2xl opacity-80 hover:opacity-100 mt-6">Weekly</a>
+        <a href="#" class="text-2xl opacity-80 hover:opacity-100 mt-6">Monthly</a>
+    </div>
+</div>
+<div class="w-2/4 relative h-48">
+    <div class="absolute ml-8 mr-8 rounded-3xl w-full bg-yellow-400 h-40 z-10 bg-no-repeat bg-right-top" style="background-image: url(images/icon-work.svg);">
+    </div>
+    <div class="absolute top-4 flex justify-between bg-indigo-800 m-8 rounded-3xl text-white p-8 w-full z-10">
+        <div>
+            <div class="text-2xl font-medium">Work</div>
+            <div class="text-5xl font-thin">32hrs</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex justify-end mb-6 mt-4">
+                <img src="images/icon-ellipsis.svg">
+            </div>
+            <div class="text-xl">Last Week-36 hrs</div>
+        </div>
+    </div>
+</div>
+<div class="w-2/4 relative h-56">
+    <div class="absolute w-full">
+        <div class="absolute m-8 rounded-3xl w-full bg-blue-400 h-40 bg-no-repeat bg-right-top bg-image-opacity-75" style="background-image: url(images/icon-play.svg);"></div>
+        <div class="absolute top-12 flex justify-between bg-indigo-800 m-8 rounded-3xl text-white p-8 w-full">
+            <div>
+                <div class="text-2xl font-medium">Play</div>
+                <div class="text-5xl font-thin">10hrs</div>
+            </div>
+            <div class="flex-row">
+                <div class="flex justify-en mb-6 mt-4">
+                    <img src="images/icon-ellipsis.svg">
+                </div>
+                <div class="text-xl">Last Week- 8hrs</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="relative w-2/4 h-60">
+    <div class="absolute w-full">
+        <div class="absolute m-8 rounded-3xl w-full bg-pink-400 h-40 bg-no-repeat bg-right-top" style="background-image: url(images/icon-study.svg);"></div>
+        <div class="absolute top-10 flex justify-between bg-indigo-800 m-8 rounded-3xl text-white p-8 w-full">
+                <div>
+                    <div class="text-2xl font-medium">Study</div>
+                    <div class="text-5xl font-thin">4hrs</div>
+                </div>
+            <div class="flex-row">
+                <div class="flex justify-en mb-6 mt-4">
+                    <img src="images/icon-ellipsis.svg">
+                </div>
+                <div class="text-xl">Last Week-7hrs</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="relative w-2/4 h-62">
+    <div class="absolute w-full">
+        <div class="absolute m-8 rounded-3xl w-full bg-green-400 h-40 bg-no-repeat bg-right-top" style="background-image: url(images/icon-exercise.svg);"></div>
+        <div class="absolute top-10 flex justify-between bg-indigo-800 m-8 rounded-3xl text-white p-8 w-full">
+            <div>
+                <div class="text-2xl font-medium">Exercise</div>
+                <div class="text-5xl font-thin">4hrs</div>
+            </div>
+            <div class="flex-row">
+                <div class="flex justify-en mb-6 mt-4">
+                    <img src="images/icon-ellipsis.svg">
+                </div>
+                <div class="text-xl">Last Week-5hrs</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+
+<!--
+Daily
+Weekly
+Monthly
+  Work
+  5hrs &lt;!&ndash; daily &ndash;&gt;
+  Previous - 7hrs &lt;!&ndash; daily &ndash;&gt;
+  32hrs &lt;!&ndash; weekly &ndash;&gt;
+  Previous - 36hrs &lt;!&ndash; weekly &ndash;&gt;
+  103hrs &lt;!&ndash; monthly &ndash;&gt;
+  Previous - 128hrs &lt;!&ndash; monthly &ndash;&gt;
+
+  Play
+  1hr &lt;!&ndash; daily &ndash;&gt;
+  Previous - 2hrs &lt;!&ndash; daily &ndash;&gt;
+  10hrs &lt;!&ndash; weekly &ndash;&gt;
+  Previous - 8hrs &lt;!&ndash; weekly &ndash;&gt;
+  23hrs &lt;!&ndash; monthly &ndash;&gt;
+  Previous - 29hrs &lt;!&ndash; monthly &ndash;&gt;
+
+  Study
+  0hrs &lt;!&ndash; daily &ndash;&gt;
+  Previous - 1hr &lt;!&ndash; daily &ndash;&gt;
+  4hrs &lt;!&ndash; weekly &ndash;&gt;
+  Previous - 7hrs &lt;!&ndash; weekly &ndash;&gt;
+  13hrs &lt;!&ndash; monthly &ndash;&gt;
+  Previous - 19hrs &lt;!&ndash; monthly &ndash;&gt;
+
+  Exercise
+  1hr &lt;!&ndash; daily &ndash;&gt;
+  Previous - 1hr &lt;!&ndash; daily &ndash;&gt;
+  4hrs &lt;!&ndash; weekly &ndash;&gt;
+  Previous - 5hrs &lt;!&ndash; weekly &ndash;&gt;
+  11hrs &lt;!&ndash; monthly &ndash;&gt;
+  Previous - 18hrs &lt;!&ndash; monthly &ndash;&gt;
+
+  Social
+  1hr &lt;!&ndash; daily &ndash;&gt;
+  Previous - 3hrs &lt;!&ndash; daily &ndash;&gt;
+  5hrs &lt;!&ndash; weekly &ndash;&gt;
+  Previous - 10hrs &lt;!&ndash; weekly &ndash;&gt;
+  21hrs &lt;!&ndash; monthly &ndash;&gt;
+  Previous - 23hrs &lt;!&ndash; monthly &ndash;&gt;
+
+  Self Care
+  0hrs &lt;!&ndash; daily &ndash;&gt;
+  Previous - 1hr &lt;!&ndash; daily &ndash;&gt;
+  2hrs &lt;!&ndash; weekly &ndash;&gt;
+  Previous - 2hrs &lt;!&ndash; weekly &ndash;&gt;
+  7hrs &lt;!&ndash; monthly &ndash;&gt;
+  Previous - 11hrs &lt;!&ndash; monthly &ndash;&gt;
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kely Rufino</a>.
+  </div>
+</body>
+-->
+</html>
