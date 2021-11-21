@@ -1,100 +1,283 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
 </head>
 <title>Frontend Mentor | Time tracking dashboard</title>
-<body>
-<!--<insert here the background-->
-<div class="w-2/4 relative h-80">
-    <div class="w-full bg-indigo-600 m-8 rounded-2xl text-white p-8 absolute z-20">
-        <div class="flex">
-            <div class="w-24 border-4 border-white rounded-full">
-                <img src="images/image-jeremy.png">
-            </div>
-            <div class="pl-4">
-                <div class="opacity-80">Report for</div>
-                <div class="text-3xl">Jeremy Robson</div>
-            </div>
-        </div>
-    </div>
-    <div class="absolute w-full top-40 flex justify-between bg-indigo-800 ml-8 mr-8 rounded-2xl text-white p-8 z-10">
-        <a href="#" class="text-2xl opacity-80 hover:opacity-100 mt-6">Daily</a>
-        <a href="#" class="text-2xl opacity-80 hover:opacity-100 mt-6">Weekly</a>
-        <a href="#" class="text-2xl opacity-80 hover:opacity-100 mt-6">Monthly</a>
-    </div>
-</div>
-<div class="w-2/4 relative h-48">
-    <div class="absolute ml-8 mr-8 rounded-3xl w-full bg-yellow-400 h-40 z-10 bg-no-repeat bg-right-top" style="background-image: url(images/icon-work.svg);">
-    </div>
-    <div class="absolute top-4 flex justify-between bg-indigo-800 m-8 rounded-3xl text-white p-8 w-full z-10">
-        <div>
-            <div class="text-2xl font-medium">Work</div>
-            <div class="text-5xl font-thin">32hrs</div>
-        </div>
-        <div class="flex-row">
-            <div class="flex justify-end mb-6 mt-4">
-                <img src="images/icon-ellipsis.svg">
-            </div>
-            <div class="text-xl">Last Week-36 hrs</div>
-        </div>
-    </div>
-</div>
-<div class="w-2/4 relative h-56">
-    <div class="absolute w-full">
-        <div class="absolute m-8 rounded-3xl w-full bg-blue-400 h-40 bg-no-repeat bg-right-top bg-image-opacity-75" style="background-image: url(images/icon-play.svg);"></div>
-        <div class="absolute top-12 flex justify-between bg-indigo-800 m-8 rounded-3xl text-white p-8 w-full">
-            <div>
-                <div class="text-2xl font-medium">Play</div>
-                <div class="text-5xl font-thin">10hrs</div>
-            </div>
-            <div class="flex-row">
-                <div class="flex justify-en mb-6 mt-4">
-                    <img src="images/icon-ellipsis.svg">
+<body class="bg-gray-800">
+<div>
+    <div class="flex h-screen flex-col flex-nowrap items-stretch justify-start md:flex-row">
+        <div class="w-full flex items-center md:w-72">
+            <div class="w-full flex-col">
+                <div class="bg-indigo-600 m-4 rounded-2xl text-white p-4 relative">
+                    <div class="flex flex-col z-20">
+                        <div class="w-24 border-4 border-white rounded-full">
+                            <img class="md:flex" src="images/image-jeremy.png" alt="Jeremy picture rounded">
+                        </div>
+                        <div class="mt-6 mb-16">
+                            <div class="opacity-80">Report for</div>
+                            <div class="text-3xl">Jeremy Robson</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="text-xl">Last Week- 8hrs</div>
+                <div class="flex flex-row justify-between m-4 -mt-12 bg-indigo-800 rounded-2xl text-white p-4 z-10 md:flex-col">
+                    <a href="#" class="text-2xl opacity-80 hover:opacity-100 mt-6">Daily</a>
+                    <a href="#" class="text-2xl opacity-80 hover:opacity-100 mt-6">Weekly</a>
+                    <a href="#" class="text-2xl opacity-80 hover:opacity-100 mt-6">Monthly</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex-grow flex flex-wrap flex-row content-center justify-start">
+            <div class="w-full h-60 m-4 md:relative md:w-60 md:m-0">
+                <div class="relative w-full md:absolute">
+                    <div class="relative rounded-3xl w-full bg-pink-400 h-40 bg-no-repeat bg-right-top md:absolute"
+                         style="background-image: url(images/icon-study.svg);"></div>
+                    <div class="-mt-32 relative flex justify-between bg-indigo-800 rounded-3xl text-white p-8 w-full md:mt-8">
+                        <div>
+                            <div class="text-2xl font-medium">Study</div>
+                            <div class="text-5xl font-thin">4hrs</div>
+                        </div>
+                        <div class="flex-row">
+                            <div class="flex justify-end mb-6 mt-4">
+                                <img src="images/icon-ellipsis.svg">
+                            </div>
+                            <div class="text-xl">Last Week-7hrs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full h-60 m-4 md:relative md:w-60 md:m-0">
+                <div class="relative w-full md:absolute">
+                    <div class="relative rounded-3xl w-full bg-pink-400 h-40 bg-no-repeat bg-right-top md:absolute"
+                         style="background-image: url(images/icon-study.svg);"></div>
+                    <div class="-mt-32 relative flex justify-between bg-indigo-800 rounded-3xl text-white p-8 w-full md:mt-8">
+                        <div>
+                            <div class="text-2xl font-medium">Study</div>
+                            <div class="text-5xl font-thin">4hrs</div>
+                        </div>
+                        <div class="flex-row">
+                            <div class="flex justify-end mb-6 mt-4">
+                                <img src="images/icon-ellipsis.svg">
+                            </div>
+                            <div class="text-xl">Last Week-7hrs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full h-60 m-4 md:relative md:w-60 md:m-0">
+                <div class="relative w-full md:absolute">
+                    <div class="relative rounded-3xl w-full bg-pink-400 h-40 bg-no-repeat bg-right-top md:absolute"
+                         style="background-image: url(images/icon-study.svg);"></div>
+                    <div class="-mt-32 relative flex justify-between bg-indigo-800 rounded-3xl text-white p-8 w-full md:mt-8">
+                        <div>
+                            <div class="text-2xl font-medium">Study</div>
+                            <div class="text-5xl font-thin">4hrs</div>
+                        </div>
+                        <div class="flex-row">
+                            <div class="flex justify-end mb-6 mt-4">
+                                <img src="images/icon-ellipsis.svg">
+                            </div>
+                            <div class="text-xl">Last Week-7hrs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full h-60 m-4 md:relative md:w-60 md:m-0">
+                <div class="relative w-full md:absolute">
+                    <div class="relative rounded-3xl w-full bg-pink-400 h-40 bg-no-repeat bg-right-top md:absolute"
+                         style="background-image: url(images/icon-study.svg);"></div>
+                    <div class="-mt-32 relative flex justify-between bg-indigo-800 rounded-3xl text-white p-8 w-full md:mt-8">
+                        <div>
+                            <div class="text-2xl font-medium">Study</div>
+                            <div class="text-5xl font-thin">4hrs</div>
+                        </div>
+                        <div class="flex-row">
+                            <div class="flex justify-end mb-6 mt-4">
+                                <img src="images/icon-ellipsis.svg">
+                            </div>
+                            <div class="text-xl">Last Week-7hrs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full h-60 m-4 md:relative md:w-60 md:m-0">
+                <div class="relative w-full md:absolute">
+                    <div class="relative rounded-3xl w-full bg-pink-400 h-40 bg-no-repeat bg-right-top md:absolute"
+                         style="background-image: url(images/icon-study.svg);"></div>
+                    <div class="-mt-32 relative flex justify-between bg-indigo-800 rounded-3xl text-white p-8 w-full md:mt-8">
+                        <div>
+                            <div class="text-2xl font-medium">Study</div>
+                            <div class="text-5xl font-thin">4hrs</div>
+                        </div>
+                        <div class="flex-row">
+                            <div class="flex justify-end mb-6 mt-4">
+                                <img src="images/icon-ellipsis.svg">
+                            </div>
+                            <div class="text-xl">Last Week-7hrs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full h-60 m-4 md:relative md:w-60 md:m-0">
+                <div class="relative w-full md:absolute">
+                    <div class="relative rounded-3xl w-full bg-pink-400 h-40 bg-no-repeat bg-right-top md:absolute"
+                         style="background-image: url(images/icon-study.svg);"></div>
+                    <div class="-mt-32 relative flex justify-between bg-indigo-800 rounded-3xl text-white p-8 w-full md:mt-8">
+                        <div>
+                            <div class="text-2xl font-medium">Study</div>
+                            <div class="text-5xl font-thin">4hrs</div>
+                        </div>
+                        <div class="flex-row">
+                            <div class="flex justify-end mb-6 mt-4">
+                                <img src="images/icon-ellipsis.svg">
+                            </div>
+                            <div class="text-xl">Last Week-7hrs</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- div um -->
+    <!--    <div class="md:w-60 md:h-full md:mt-4 w-full bg-indigo-600 m-8 rounded-2xl text-white p-8 absolute z-20">-->
+    <!--        <div class="flex md:flex-col">-->
+    <!--            <div class="w-24 border-4 border-white rounded-full">-->
+    <!--                <img class="md:flex" src="images/image-jeremy.png" alt="Jeremy picture rounded">-->
+    <!--            </div>-->
+    <!--            <div class="md:pt-6 md:justify-self-center pl-4">-->
+    <!--                <div class="md:pt-6 opacity-80">Report for</div>-->
+    <!--                <div class="md:grid-cols-2 md:gap-6 text-3xl">Jeremy Robson</div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    <div class="md:w-60 md:flex-col md:justify-start absolute w-full top-40 flex justify-between bg-indigo-800 ml-8 mr-8 rounded-2xl text-white p-8 z-10">-->
+    <!--        <a href="#" class="md:mt-60 text-2xl opacity-80 hover:opacity-100 mt-6">Daily</a>-->
+    <!--        <a href="#" class="text-2xl opacity-80 hover:opacity-100 mt-6">Weekly</a>-->
+    <!--        <a href="#" class="text-2xl opacity-80 hover:opacity-100 mt-6">Monthly</a>-->
+    <!--    </div>-->
+
+    <!-- div dois -->
+    <!--        <div class="md:w-80 w-60 relative h-48 ">-->
+    <!--            <div class="md:ml-72 md:-mt-80 absolute ml-8 mr-8 rounded-3xl w-full bg-yellow-200 h-40 z-10 bg-no-repeat bg-right-top"-->
+    <!--                 style="background-image: url(images/icon-work.svg);">-->
+    <!--            </div>-->
+    <!--            <div class="md:flex-col md:absolute md:ml-72 md:-mt-80 absolute top-4 flex justify-between bg-indigo-800 m-8 rounded-3xl text-white p-8 w-full z-10">-->
+    <!--                <div>-->
+    <!--                    <div class="text-2xl font-medium">Work</div>-->
+    <!--                    <div class="text-5xl font-thin">32hrs</div>-->
+    <!--                </div>-->
+    <!--                <div class="flex-row">-->
+    <!--                    <div class="justify-end mb-6 mt-4">-->
+    <!--                        <img src="images/icon-ellipsis.svg" alt="ellipsis image">-->
+    <!--                    </div>-->
+    <!--                    <div class="text-xl">Last Week-36 hrs</div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+
+    <!--
+       <div class="md:relative w-60 relative h-56 ">
+           <div class="absolute w-full">
+               <div class="absolute m-8 rounded-3xl w-full bg-blue-400 h-40 bg-no-repeat bg-right-top bg-image-opacity-75"
+                    style="background-image: url(images/icon-play.svg);"></div>
+               <div class="md:relative absolute top-12 flex justify-between bg-indigo-800 m-8 rounded-3xl text-white p-8 w-full">
+                   <div>
+                       <div class="text-2xl font-medium">Play</div>
+                       <div class="text-5xl font-thin">10hrs</div>
+                   </div>
+                   <div class="md:flex-col flex-row">
+                       <div class="flex justify-end mb-6 mt-4">
+                           <img src="images/icon-ellipsis.svg">
+                       </div>
+                       <div class="text-xl">Last Week- 8hrs</div>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+       <div class="w-60 h-60 md:relative">
+           <div class="absolute w-full">
+               <div class="absolute rounded-3xl w-full bg-pink-400 h-40 bg-no-repeat bg-right-top"
+                    style="background-image: url(images/icon-study.svg);"></div>
+               <div class="absolute flex justify-between bg-indigo-800 rounded-3xl text-white p-8 w-full mt-8">
+                   <div>
+                       <div class="text-2xl font-medium">Study</div>
+                       <div class="text-5xl font-thin">4hrs</div>
+                   </div>
+                   <div class="flex-row">
+                       <div class="flex justify-end mb-6 mt-4">
+                           <img src="images/icon-ellipsis.svg">
+                       </div>
+                       <div class="text-xl">Last Week-7hrs</div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="relative w-60 h-64 -mt-6">
+           <div class="absolute w-full">
+               <div class="absolute m-8 rounded-3xl w-full bg-green-400 h-40 bg-no-repeat bg-right-top"
+                    style="background-image: url(images/icon-exercise.svg);"></div>
+               <div class="absolute flex justify-between bg-indigo-800 rounded-3xl text-white p-8 w-full mt-8">
+                   <div>
+                       <div class="text-2xl font-medium">Exercise</div>
+                       <div class="text-5xl font-thin">4hrs</div>
+                   </div>
+                   <div class="flex-row">
+                       <div class="flex justify-end mb-6 mt-4">
+                           <img src="images/icon-ellipsis.svg">
+                       </div>
+                       <div class="text-xl">Last Week-5hrs</div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="relative w-60 h-72 -mt-10 ">
+           <div class="absolute w-full">
+               <div class="absolute m-8 rounded-3xl w-full bg-purple-400 h-40 bg-no-repeat bg-right-top"
+                    style="background-image: url(images/icon-social.svg);"></div>
+               <div class="absolute flex justify-between bg-indigo-800 rounded-3xl text-white p-8 w-full mt-8">
+                   <div>
+                       <div class="text-2xl font-medium">Social</div>
+                       <div class="text-5xl font-thin">5hrs</div>
+                   </div>
+                   <div class="flex-row">
+                       <div class="flex justify-end mb-6 mt-4">
+                           <img src="images/icon-ellipsis.svg" alt="ellipsis icon">
+                       </div>
+                       <div class="text-xl">Last Week-10hrs</div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="relative w-60 h-80 -mt-20">
+           <div class="absolute w-full">
+               <div class="absolute m-8 rounded-3xl w-full bg-yellow-400 h-40 bg-no-repeat bg-right-top"
+                    style="background-image: url(images/icon-self-care.svg);"></div>
+               <div class="absolute flex justify-between bg-indigo-800 rounded-3xl text-white p-8 w-full mt-8">
+                   <div>
+                       <div class="text-2xl font-medium">Self Care</div>
+                       <div class="text-5xl font-thin">2hrs</div>
+                   </div>
+                   <div class="flex-row">
+                       <div class="flex justify-end mb-6 mt-4">
+                           <img src="images/icon-ellipsis.svg" alt="ellipsis icon">
+                       </div>
+                       <div class="text-xl">Last Week-hrs</div>
+                   </div>
+               </div>
+           </div>
+           -->
 </div>
-<div class="relative w-2/4 h-60">
-    <div class="absolute w-full">
-        <div class="absolute m-8 rounded-3xl w-full bg-pink-400 h-40 bg-no-repeat bg-right-top" style="background-image: url(images/icon-study.svg);"></div>
-        <div class="absolute top-10 flex justify-between bg-indigo-800 m-8 rounded-3xl text-white p-8 w-full">
-                <div>
-                    <div class="text-2xl font-medium">Study</div>
-                    <div class="text-5xl font-thin">4hrs</div>
-                </div>
-            <div class="flex-row">
-                <div class="flex justify-en mb-6 mt-4">
-                    <img src="images/icon-ellipsis.svg">
-                </div>
-                <div class="text-xl">Last Week-7hrs</div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="relative w-2/4 h-62">
-    <div class="absolute w-full">
-        <div class="absolute m-8 rounded-3xl w-full bg-green-400 h-40 bg-no-repeat bg-right-top" style="background-image: url(images/icon-exercise.svg);"></div>
-        <div class="absolute top-10 flex justify-between bg-indigo-800 m-8 rounded-3xl text-white p-8 w-full">
-            <div>
-                <div class="text-2xl font-medium">Exercise</div>
-                <div class="text-5xl font-thin">4hrs</div>
-            </div>
-            <div class="flex-row">
-                <div class="flex justify-en mb-6 mt-4">
-                    <img src="images/icon-ellipsis.svg">
-                </div>
-                <div class="text-xl">Last Week-5hrs</div>
-            </div>
-        </div>
-    </div>
-</div>
+
 </body>
 
 
